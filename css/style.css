@@ -158,13 +158,15 @@ main{
 .player-nav{
     height:auto;
     width:50%;
-    margin:0 auto;
     border: 1px solid #fff;
-    margin-top:150px;
+    margin:150px auto 0px auto;
 }
 .guided-choices{
-    display: block;
     width:100%;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 .guided-choices li{

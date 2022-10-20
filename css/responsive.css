@@ -11,11 +11,44 @@
     .playlist.none{
         display:none;
     }
-    .nav{
-        justify-self: flex-start;
-    }
-    #user{
-        justify-self: flex-end;
-    }
     
+    /* spazio contenuti */
+    .content{
+        min-width: calc(100% - 60px);
+    }
+
+    /* guida navigazione */
+    .player-nav{
+        min-width:80%;
+    }
+    .guided-choices{
+        display:flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .guided-choices li{
+        min-width: calc((100% - 60px) / 4);
+        margin: auto 5px;
+    }
+
+    /* spazio scorrimento */
+    .wrapper{
+        display:flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .recent{
+        min-height: 550px;
+    }
+    .suggest, .artist{
+        min-height: 200px;
+    }
+
+    .item{
+        min-width: calc((100% - 20px) / 2);
+        max-height:150px;
+    }
+
 }
