@@ -43,7 +43,11 @@ main{
     height:40px;
     margin:10px auto;
 }
+
 #logo img{
+    color:#fff;
+}
+#logo h2{
     color:#fff;
 }
 
@@ -64,7 +68,7 @@ main{
 }
 
 #special{
-    width:80%;
+    width:100%;
     height: 60px;
     border: solid 1px #fff;
 }
@@ -94,22 +98,25 @@ main{
 
 #user{
     width: 90%;
-    margin: 1px auto;
-    max-height: calc(20% - 40px);
-    height: calc(20% - 40px);
+    margin: 100px auto 1px;
+    height:auto;
 }
 #app{
-    height: calc(100% / 3);
+    height: auto;
     width:100%;
     border-bottom: 1px solid #fff;
 }
+#app span{
+    color:grey;
+}
+
 #user-name{
     height: auto;
     width:100%;
 }
 
 .fa-circle-down{
-    color:white;
+    color:grey;
     font-size:10px;
 }
 
@@ -132,7 +139,6 @@ main{
 
 #upgrade{
     float:right;
-    margin: auto 3px;
     height: 40px;
     width: 100px;
     border: solid 1px #fff;
