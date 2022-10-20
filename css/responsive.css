@@ -1,0 +1,21 @@
+/* responsive mobile */
+@media screen and (min-width:360px) and (max-width: 414px) {
+    
+    /* menu verticale */
+    .menu{
+        max-width:50px;
+    }
+    .none{
+        display:none;
+    }
+    .playlist.none{
+        display:none;
+    }
+    .nav{
+        justify-self: flex-start;
+    }
+    #user{
+        justify-self: flex-end;
+    }
+    
+}

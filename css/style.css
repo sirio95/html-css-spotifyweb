@@ -14,13 +14,14 @@ body{
 /* Debug */
 main{
     height:90%;
-    min-height: 500px;
+    min-height: 300px;
     width:100%;
     background-color: #141922;
     position:relative;
     display:flex;
     justify-content: space-between;
     flex-shrink: 0;
+    overflow-y: hidden;
 }
 .fixed{
     position: fixed;
@@ -32,12 +33,23 @@ main{
     height:100%;
     background-color: #000;
     z-index:10;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 #logo{
     border: solid 1px #fff;
     width:80%;
     height:40px;
     margin:10px auto;
+}
+#logo img{
+    color:#fff;
+}
+
+.nav{
+    height:20%;
+    max-height:40%;
 }
 
 .nav li{
@@ -49,16 +61,56 @@ main{
 .nav a{
     color:#fff;
     text-decoration: none;
-
 }
 
 #special{
+    width:80%;
     height: 60px;
+    border: solid 1px #fff;
 }
 
 .menu h3{
     color:#fff;
     margin: 20px 10px;
+}
+
+.playlist{
+    display: block;
+    width:80%;
+    min-height: 40%;
+    overflow-y: scroll;
+    margin: auto 10%; 
+}
+.playlist li{
+    display: block;
+    list-style: none;
+    border: solid 1px #fff;
+    padding: 5px 10px;
+}
+.playlist a{
+    color:#fff;
+    text-decoration: none;
+}
+
+#user{
+    width: 90%;
+    margin: 1px auto;
+    max-height: calc(20% - 40px);
+    height: calc(20% - 40px);
+}
+#app{
+    height: calc(100% / 3);
+    width:100%;
+    border-bottom: 1px solid #fff;
+}
+#user-name{
+    height: auto;
+    width:100%;
+}
+
+.fa-circle-down{
+    color:white;
+    font-size:10px;
 }
 
 /* Barra Upgrade */
@@ -108,6 +160,7 @@ main{
     width:50%;
     margin:0 auto;
     border: 1px solid #fff;
+    margin-top:150px;
 }
 .guided-choices{
     display: block;
@@ -130,8 +183,6 @@ main{
     width:100%;
     max-height:calc(100% - 100px);
     overflow-y: scroll;
-    margin-top:150px;
-
 }
 
 .wrapper{
@@ -167,6 +218,7 @@ main{
 
 .graph{
     max-height:90%;
+    min-height: 58px;
     max-width:calc (100% / 3);
     border: 1px solid #fff;
     height:50px;
