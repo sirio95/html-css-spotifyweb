@@ -15,6 +15,7 @@
     /* Barra Upgrade */
     .premium{
         max-height: 60px;
+        min-width:calc(100% - 50px);
     }
 
     #upgrade{
@@ -23,7 +24,7 @@
     
     /* spazio contenuti */
     .content{
-        min-width: calc(100% - 60px);
+        min-width: calc(100% - 50px);
     }
 
     /* guida navigazione */
@@ -42,11 +43,13 @@
     }
 
     /* spazio scorrimento */
+    .overflow{
+        min-width:100%; 
+    }
     .wrapper{
-        display:flex;
-        justify-content: space-around;
-        align-items: center;
-        flex-wrap: wrap;
+        min-width: calc(100% - 15px);
+        margin-left:5px;
+        margin-right:10px;
     }
     .recent{
         min-height: 550px;
@@ -63,16 +66,18 @@
 
 /* Responsive mobile s */
 
-@media screen and (min-width: 415px) and (max-width: 767px){
+@media screen and (min-width:415px) and (max-width:767px){
     /* Regole generali */
     body{
-        font-size:14px;
+        font-size:12px;
     }
 
     /* Navigazione destra */
     .menu{
-        max-width: 140px;
+        max-width: 150px;
+        min-width: 140px;
     }
+
     #logo{
         min-width:100%;
     }
@@ -83,6 +88,7 @@
     }
     #logo h2{
         display: inline-block;
+        font-size: 1.2em;
     }
     .nav img{
         max-width:20px;
@@ -107,33 +113,58 @@
     #app{
         padding: 2px 20px;
     }
-    
+
+    /* Spazio contenuti */
+    .content{
+        min-width:calc(100% - 50px);
+    }
+    .overflow{
+        min-width:100%;
+    }
     /* Barra Upgrade */
     .premium{
         max-height: 60px;
-    }
-
-    .premium::before{
-        content:"";
-        width:100%;
-        height:100%;
-        background:rgba(0,0,0,.5);
-        position:absolute;
+        min-width:calc(100% - 140px);
     }
     
     #upgrade{
-        float:right;
-        height: 40px;
-        width: 100px;
-        border: solid 1px #fff;
-        margin: 10px 3px;
-    
+        min-height: 30px;
+        min-width: 80px;    
     }
-    
-    .premium::after{
-        content:"";
-        display: table;
-        clear:both;
+
+    /* guida navigazione */
+    .player-nav{
+        width:100%;
+        margin:0;
     }
+    .guided-choices{
+        display:flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .guided-choices li{
+        max-width: calc((100% - 140px) / 3);
+        margin: auto 5px;
+    }
+
+    /* spazio a scorrimento */
+    .wrapper{
+        max-width: calc(100% - 140px);
+        margin-left:5px;
+        margin-right:10px;
+    }
+    .recent{
+        min-height: 550px;
+    }
+    .suggest, .artist{
+        min-height: 200px;
+    }
+
+    .item{
+        min-width: calc((100% - 20px) / 2);
+        max-height:150px;
+    }
+
 
 }

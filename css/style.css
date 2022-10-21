@@ -11,224 +11,158 @@ body{
     height:100vh;
 }
 
-/* Debug */
 main{
-    height:90%;
-    min-height: 300px;
+    height:100vh;
     width:100%;
     background-color: #141922;
-    position:relative;
-    display:flex;
-    justify-content: space-between;
-    flex-shrink: 0;
-    overflow-y: hidden;
-}
-.fixed{
-    position: fixed;
 }
 
-/* Navigazione destra */
+li a{
+    text-decoration: none;
+    color:#666666;
+}
+
+/* Dimensioni sezioni */
+.content{
+    width:100%;
+    height:calc(100vh - 60px);
+    display:flex;
+
+    /* Debug */
+    border:1px solid #fff;
+}
+
 .menu{
-    width: 250px;
+    width:250px;
     height:100%;
-    background-color: #000;
-    z-index:10;
+    background-color:#000000;
+    
+    /* Debug */
+    border:1px solid #fff;
+}
+
+.overflow{
+    flex-grow:1;
+    height:100%;
+
+    /* Debug */
+    border:1px solid #fff;
+}
+
+.player{
+    min-height:60px;
+    width:100%;
+    background-color:#282828;
+
+    /* Debug */
+    border:1px solid #fff;
+}
+
+/* struttura navigazione destra */
+.menu{
     display:flex;
     flex-direction: column;
     justify-content: space-between;
-}
-#logo{
-    border: solid 1px #fff;
-    width:80%;
-    height:40px;
-    margin:10px auto;
+    margin-left: 0.3rem;
 }
 
-#logo img{
+.menu-item-big{
+    width:100%;
+    max-height: 10%;
     color:#fff;
+
 }
-#logo h2{
-    color:#fff;
+.menu-item-big img, .menu-item-big i, .menu-item-big h2{
+    display:inline-block;
+    vertical-align: text-top;
+    padding: 3px;
+}
+.menu-item-big h2{
+    font-size: 2rem;
+}
+
+.menu-item-big img{
+    max-height:100%;
+    width:auto;
 }
 
 .nav{
-    height:20%;
-    max-height:40%;
+    width:100%;
+    max-height:30%;
+    color:#666666;
+
+
 }
 
 .nav li{
-    display: block;
-    list-style: none;
-    border: solid 1px #fff;
-    padding: 5px 10px;
-}
-.nav a{
-    color:#fff;
-    text-decoration: none;
-}
-
-#special{
+    display:block;
     width:100%;
-    height: 60px;
-    border: solid 1px #fff;
+    max-height:calc(100% / 3);
+    padding: 2px 5px;
+    color:#666666;
+    list-style: none;
+
 }
 
-.menu h3{
-    color:#fff;
-    margin: 20px 10px;
+.nav span{
+    font-size: 1.2rem;
+    vertical-align: middle;
+    margin-left: 0.5rem;
+}
+.icone-nav{
+    height: 2em;
+    width:auto;
+    display: inline-block;
+    vertical-align: middle;
 }
 
 .playlist{
-    display: block;
-    width:80%;
-    min-height: 40%;
-    overflow-y: scroll;
-    margin: auto 10%; 
-}
-.playlist li{
-    display: block;
-    list-style: none;
-    border: solid 1px #fff;
-    padding: 5px 10px;
-}
-.playlist a{
     color:#fff;
-    text-decoration: none;
+    font-size:2rem;
+}
+.playlist span{
+    font-size:1.5rem;
+    color:#666666;
+}
+.playlist i{
+    color:#666666;
+}
+
+.playlist-items{
+    width:100%;
+    max-height: 40%;
+    overflow-y: scroll;
+}
+
+#app{
+    height:40%;
+    width:80%;
+    margin: 0 10%;
+    border-bottom: 2px solid #666666;
+}
+#app img{
+    display:inline-block;
+    height: 1.5rem;
+    vertical-align:text-top;
+}
+#app span{
+    color:#666666;
 }
 
 #user{
-    width: 90%;
-    margin: 100px auto 1px;
-    height:auto;
+    height:60%;
+    width:80%;
+    margin:0 10%;
 }
-#app{
-    height: auto;
-    width:100%;
-    border-bottom: 1px solid #fff;
-}
-#app span{
-    color:grey;
-}
-
-#user-name{
-    height: auto;
-    width:100%;
-}
-
-.fa-circle-down{
-    color:grey;
-    font-size:10px;
-}
-
-/* Barra Upgrade */
-.premium{
-    height:100px;
-    width:100%;
-    background:transparent;
-    top:0;
-    right:0;
-    z-index:9;
-}
-.premium::before{
-    content:"";
-    width:100%;
-    height:100%;
-    background:rgba(0,0,0,.5);
-    position:absolute;
-}
-
-#upgrade{
-    float:right;
-    height: 40px;
-    width: 100px;
-    border: solid 1px #fff;
-    margin:30px 3px;
-
-}
-
-.premium::after{
-    content:"";
-    display: table;
-    clear:both;
-}
-
-
-/* Spazio contenuti */
-.content{
-    height:100%;
-    width: calc(100% - 300px);
-    background-color: #141922;
-}
-
-/* guida navigazione */
-.player-nav{
-    height:auto;
-    width:50%;
-    border: 1px solid #fff;
-    margin:150px auto 0px auto;
-}
-.guided-choices{
-    width:100%;
-    display:flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
-}
-
-.guided-choices li{
+#user img{
     display: inline-block;
-    list-style: none;
-    border: solid 1px #fff;
-    padding: 5px 10px;
-    max-width: calc(100% / 6);
+    height:1.5rem;
+    background-color: #666666;
+    border-radius:25px;
+    vertical-align: middle;
 }
-.guided-choices a{
-    text-decoration: none;
-}
-
-/* Spazio a scorrimento */
-.overflow{
-    width:100%;
-    max-height:calc(100% - 100px);
-    overflow-y: scroll;
-}
-
-.wrapper{
-    height:250px;
-    width:100%;
-    padding: 10px;
-    border:1px solid #fff;
-    display:flex;
-    justify-content: flex-start;
-    align-items: center;
-    flex-wrap: wrap;
-}
-
-.item{
-    height:150px;
-    width:calc((100% - 80px) / 6);
-    border:1px solid #fff;
-    margin: auto 5px;
-}
-
-
-/* player */
-.player{
-    height:10%;
-    min-height: 60px;
-    width:100%;
-    background-color:#282828;
-    z-index:11;
-    display:flex;
-    justify-content: space-between;
-    align-items:center;
-}
-
-.graph{
-    max-height:90%;
-    min-height: 58px;
-    max-width:calc (100% / 3);
-    border: 1px solid #fff;
-    height:50px;
-    width: 50px;
+#user span{
+    font-size: 1.3rem;
+    color:#fff;
+    font-weight: 500;
 }

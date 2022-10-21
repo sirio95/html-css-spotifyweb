@@ -14,105 +14,194 @@
 </head>
 <body>
     <main>
-
-        <!-- Navigazione a destra -->
-        <nav class="menu">
-            
-            <div id="logo">
-                <a href=""><img src="img/logo-small.svg" alt="logo spotify"></a>
-                <h2 class="none">Spotify</h2>
-
-            </div>
-            
-            <ul class="nav">
-                <li><a href=""><img src="img/home.svg" alt="home"><span class="none">Home</span></a></li>
-                <li><a href="">link</a></li>
-                <li><a href="">link</a></li>
-            </ul>
-            
-            <h3 class="none">PLAYLIST</h3>
-            
-            <div  class="none" id="special">Crea Playlists</div>
-            
-            <ul class="playlist none">
-                <li><a href="">link</a></li>
-                <li><a href="">link</a></li>
-                <li><a href="">link</a></li>
-                <li><a href="">link</a></li>
-                <li><a href="">link</a></li>
-                <li><a href="">link</a></li>
-                <li><a href="">link</a></li>
-                <li><a href="">link</a></li>
-                <li><a href="">link</a></li>
-                <li><a href="">link</a></li>
-                <li><a href="">link</a></li>
-                <li><a href="">link</a></li>              
-            </ul>
-            
-            <div id="user">
-                <div id="app">
-                    <i class="fa-regular fa-circle-down"></i>
-                    <span class="none">Installa app</span>
-                </div>
-                <div id="user-name">
-                    <img src="img/profile.svg" alt="icona utente">
-                    <h3 class="none">John Doe</h3>
-                </div>
-            </div>
-        </nav>
-
         <!-- Spazio contenuti -->
-
         <section class="content">
-            <!-- spazio a scorrimento -->
+
+            
+            <!-- Navigazione destra -->
+            <nav class="menu">
+                
+                <div class="menu-item-big">
+                    <a href="#">
+                        <img src="img/logo-small.svg" alt="logo spotify">
+                    </a>
+                    <h2 class="none">Spotify</h2>
+
+                </div>
+                
+                <ul class="nav">
+                    <li>
+                        <a href="#">
+                            <img src="img/home.svg" alt="home icon" class="icone-nav">
+                            <span class="none">Home</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="img/search.svg" alt="search icon" class="icone-nav">
+                            <span class="none">Cerca</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="img/libreria.svg" alt="icona libreria" class="icone-nav">
+                            <span class="none">La tua libreria</span>
+                        </a>
+                    </li>
+                </ul>
+                
+                <h3 class="playlist none">PLAYLIST</h3>
+                
+                <div  class="menu-item-big playlist none">
+                    <i class="fa-solid fa-square-plus"></i>
+                    <span>Crea Playlist</span>
+                </div>
+                
+                <ul class="playlist-items none">
+                    <li class="playlist-item"><a href="#">Nome Playlist</a></li>
+                    <li class="playlist-item"><a href="#">Nome Playlist</a></li>
+                    <li class="playlist-item"><a href="#">Nome Playlist</a></li>
+                    <li class="playlist-item"><a href="#">Nome Playlist</a></li>
+                    <li class="playlist-item"><a href="#">Nome Playlist</a></li>
+                    <li class="playlist-item"><a href="#">Nome Playlist</a></li>
+                    <li class="playlist-item"><a href="#">Nome Playlist</a></li>                  
+                </ul>
+                
+                <div class="menu-item-big">
+                    <div id="app">
+                        <img src="img/download.svg" alt="icona download">
+                        <span>Installa app</span>
+                    </div>
+                    <div id="user">
+                        <img src="img/profile.svg" alt="icona profilo">
+                        <span>John Doe</span>
+                    </div>
+                </div>
+            </nav>
+
+            <!-- spazio scorrimento -->
             <div class="overflow">
 
                 <!-- Barra Upgrade -->
                 <div class="fixed premium">
-                    <div id="upgrade"></div>
+                    <a href="#">EFFETTUA L&apos;UPGRADE</a>
                 </div>
 
                 <!-- guida navigazione -->
-                <nav class="player-nav">
-                    <ul class="guided-choices">
-                        <li><a href="">link</a></li>
-                        <li><a href="">link</a></li>
-                        <li><a href="">link</a></li>
-                        <li><a href="">link</a></li>
-                        <li><a href="">link</a></li>
-                        <li><a href="">link</a></li>
-                    </ul>
-                </nav>
+                <ul class="guided-choices">
+                    <li><a href="">link</a></li>
+                    <li><a href="">link</a></li>
+                    <li><a href="">link</a></li>
+                    <li><a href="">link</a></li>
+                    <li><a href="">link</a></li>
+                    <li><a href="">link</a></li>
+                </ul>
 
                 <!-- contenuti -->
+                <h2>Recently Played</h2>
                 <section class="wrapper recent">
-                    <div class="item"></div>
-                    <div class="item"></div>
-                    <div class="item"></div>
-                    <div class="item"></div>
-                    <div class="item"></div>
-                    <div class="item"></div>
+                    <div class="item">
+                        <img src="img/metal_lifting.jpg" alt="album metal" class="recent-img">
+                        <h3>Heavy Metal</h3>
+                        <sub>Subtitle</sub>
+                    </div>
+                    <div class="item">
+                        <img src="img/stranger.jpeg" alt="stranger things soundtrack" class="recent-img">
+                        <h3>
+                            Stranger Things, vol.1 (a Netflix Original Series Soundtrack)
+                        </h3>
+                        <sub>Kyle Dixon &amp; Michael</sub>
+                    </div>
+                    <div class="item">
+                        <img src="img/aquietplace.jpeg" alt="a quiet place soundtrack" class="recent-img">
+                        <h3>A quiet place</h3>
+                        <sub>Subtitle</sub>
+                    </div>
+                    <div class="item">
+                        <img src="img/split.jpeg" alt="split soundtrack" class="recent-img">
+                        <h3>Split</h3>
+                        <sub>Subtitle</sub>
+                    </div>
+                    <div class="item">
+                        <img src="img/cure.jpeg" alt="a cure for wellness soundtrack" class="recent-img">
+                        <h3>A cure for wellness</h3>
+                        <sub>Subtitle</sub>
+                    </div>
+                    <div class="item">
+                        <img src="img/sinister.jpeg" alt="sinister soundtrack" class="recent-img">
+                        <h3>Sinister</h3>
+                        <sub>Subtitle</sub>
+                    </div>
                 </section>
 
+                <h2>Creato per John Doe</h2>
+                <sub>Pi&uacute; ascolti, pi&uacute; accurati saranno i suggerimenti.</sub>
                 <section class="wrapper suggest">
-                    <div class="item suggested"></div>
-                    <div class="item suggested"></div>
+                    <div class="item suggested">
+                        <img src="img/radar.jpeg" alt="playlist radar" class="suggested-img">
+                        <h3>Release Radar</h3>
+                    </div>
+                    <div class="item suggested">
+                        <img src="img/mixdaily.jpeg" alt="ascolti giornalieri" class="suggested-img">
+                        <h3>Daily Mix 1</h3>
+                    </div>
                 </section>
 
+                <h2>Artisti pi&uacute; popolari</h2>
+                <sub>Pi&uacute; ascolti, pi&uacute; accurati saranno i suggerimenti.</sub>
                 <section class="wrapper artist">
-                    <div class="item round"></div>
-                    <div class="item round"></div>
+                    <div class="item round">
+                        <img src="img/youg.jpeg" alt="Lana del Rey" class="round-img">
+                        <h3>Lana del Rey</h3>
+                    </div>
+                    <div class="item round">
+                        <img src="img/einaudi.jpeg" alt="Ludovico Einaudi" class="round-img">
+                        <h3>Ludovico Einaudi</h3>
+                    </div>
                 </section>
             </div>
         </section>
 
+        <!-- Player -->
+        <section class="fixed player">
+            <div class="graph song">
+                <img src="img/sinister.jpeg" alt="icona riproduzione" class="song-img">
+                <div class="song-artist">
+                    <h4>Sinister</h4>
+                    <sub>Brano nome</sub>
+                </div>
+                <div class="song-icons">
+                    <i class="fa-regular fa-heart"></i>
+                    <i class="fa-regular fa-folder"></i>
+                </div>
+            </div>
+            <div class="graph interaction">
+                <div class="interaction-icons">
+                    <i class="fa-solid fa-repeat"></i>
+                    <i class="fa-solid fa-backward-step"></i>
+                    <i class="fa-regular fa-circle-play"></i>
+                    <i class="fa-solid fa-forward-step"></i>
+                    <i class="fa-solid fa-rotate-right"></i>
+                </div>
+                <div class="interaction-time">
+                    <span class="time">0:25</span>
+                    <div class="bar">
+                        <div class="bar-fill"></div>
+                    </div>
+                    <span class="time">4:35</span>
+                </div>
+            </div>
+            <div class="graph volume">
+                <div class="volume-icons">
+                    <i class="fa-solid fa-list"></i>
+                    <i class="fa-solid fa-tv"></i>
+                    <i class="fa-solid fa-volume-high"></i>
+                </div>
+                <div class="volume-bar">
+                    <div class="volume-fill"></div>
+                </div>
+            </div>
+        </section>
     </main>
-
-    <!-- Player -->
-    <section class="fixed player">
-        <div class="graph song"></div>
-        <div class="graph interaction"></div>
-        <div class="graph volume"></div>
-    </section>
 </body>
 </html>
