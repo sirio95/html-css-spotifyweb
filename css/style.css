@@ -443,7 +443,7 @@ li a{
 .item img:hover{
     filter: grayscale(99%) saturate(130%);
 }
-.item img:hover .fa-circle-play.hover{
+.item img:hover .hover{
     visibility:visible;
 }
 

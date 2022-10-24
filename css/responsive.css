@@ -4,7 +4,7 @@
         font-size:12px;
     }
     .none{
-        display:none;
+        visibility:hidden;
     }
     .menu{
         flex-basis: 80px;
